@@ -1,0 +1,56 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Manrope', sans-serif;
+}   
+
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40vh;
+}
+.advices_container {
+    background-color: hsl(217, 19%, 38%);
+    margin: 0 auto;
+    width: 35%;
+    height: 200px;
+    border-radius: 10px;
+}
+.informations {
+    text-align: center;
+}
+.advices_informations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+}
+.advices_informations > * {
+    color: hsl(150, 100%, 66%);
+    font-weight: 800;
+}
+.advice_text {
+    margin: 0px 5%;
+    font-weight: 800;
+}
+.divider {
+    margin: 20px 5% 0px;
+    width: 80%;
+}
