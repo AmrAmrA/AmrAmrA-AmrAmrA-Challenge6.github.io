@@ -1,3 +1,5 @@
+/* Basic Reset */
+
 *, ::after, ::before {
     padding: 0;
     margin: 0;
@@ -20,6 +22,7 @@ li {
     list-style-type: none;
 }
 
+/* Flexbox for the global section */
 main {
     display: flex;
     justify-content: center;
@@ -27,6 +30,8 @@ main {
     align-items: center;
     height: 500px;
 }
+
+/* The box with the text inside */
 .advices_container {
     background-color: hsla(217, 19%, 38%, 0.4);
     margin: 60px auto 0px auto;
@@ -40,7 +45,7 @@ main {
     justify-content: flex-start;
     align-content: center;
 }
-
+/* Advice and number advice number */
 .advice_title {
     margin: 0px auto 15px auto;
     color: hsl(150, 100%, 66%);
@@ -49,6 +54,7 @@ main {
     max-height: 500px;
     letter-spacing: 5px;
 }
+
 .advice_text {
     width: 95%;
     text-align: center;
@@ -63,7 +69,7 @@ main {
     display: block;
     width: 80%;
 }
-
+/* Button who launches new advices  */
 .btn_trigger {
     background-color: hsl(150, 100%, 66%);
     border-radius: 50%;
@@ -78,6 +84,8 @@ main {
     box-shadow: 0 0 30px hsl(150, 100%, 66%);
 }
 
+
+/* The credits for Frontend Mentor and my Github */
 .attribution {
     display: flex;
     justify-content: center;
@@ -91,7 +99,6 @@ main {
     text-align: center;
     width: 90%;
 }
-
 
 /* Medias Queries */
 @media screen and (max-width:950px) {
