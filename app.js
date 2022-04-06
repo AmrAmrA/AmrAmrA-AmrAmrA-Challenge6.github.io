@@ -1,9 +1,14 @@
-let container = document.querySelector('.advices_container')
+let adviceText           = document.querySelector('.advice_text'); 
+let triggerBtn           = document.querySelector('.btn_trigger'); 
+let adviceNumber         = document.querySelector('.advice_title'); 
 
-fetch('https://api.adviceslip.com/advice')
+triggerBtn.addEventListener('click', launchAdvices)
+function launchAdvices() {
+     fetch('https://api.adviceslip.com/advice')
      .then(res => res.json())
      .then (data => {
-            let newParagraph = document.createElement('p'); 
-            newParagraph.innerText = data.slip.advice; 
-            container.appendChild(newParagraph)
+            adviceText.innerText = '"' + data.slip.advice + '"'; 
+            adviceNumber.innerText = 'Advice  '  + ' #' + data.slip.id; 
+            adviceNumber.classList.add('.advice_title')
 })
+}
