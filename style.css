@@ -6,12 +6,10 @@
 body {
     font-size: 16px;
     color: white;
-    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     font-family: 'Manrope', sans-serif;
     background-color:hsl(220, 22%, 16%);
-    overflow-x: hidden;
 }   
 
 a {
@@ -27,36 +25,41 @@ main {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    height: 500px;
 }
 .advices_container {
     background-color: hsla(217, 19%, 38%, 0.4);
-    margin: 0 auto;
-    width: 45%;
-    min-height: 250px;
+    margin: 60px auto 0px auto;
+    width: 35%;
+    padding: 4rem 0 6rem 0;
+    min-height: 180px;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .advice_title {
-    text-align: center;
-    margin: 15px auto;
+    margin: 0px auto 15px auto;
     color: hsl(150, 100%, 66%);
     font-weight: 600;
     text-transform: uppercase;
     max-height: 500px;
+    letter-spacing: 5px;
 }
 .advice_text {
-    width: 80%;
+    width: 95%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     font-weight: 900;
     font-size: 20px;
+    color: hsl(193, 38%, 86%);
 }
 
 .divider_desktop {
-    margin: 55px auto 10% auto;
+    margin: 10px auto 35px auto;
     display: block;
     width: 80%;
 }
@@ -67,10 +70,37 @@ main {
     padding: 25px;
     position: absolute;
     right: 50%;
-    top : 70%; 
+    top : 75%; 
     transform: translate(50%,50%);
     cursor: pointer;
 }
 .btn_trigger:hover {
     box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.attribution p {
+    margin: 30px auto 20px auto;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+}
+
+
+/* Medias Queries */
+@media screen and (max-width:950px) {
+    .advices_container {
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px) {
+    .advices_container {
+        width: 80%;
+    }
 }
